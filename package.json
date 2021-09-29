@@ -1,0 +1,20 @@
+{
+  "name": "Exercicis-DIW-i-DWEC-2021-22",
+  "version": "1.0.0",
+  "description": "- Durante el curso iré actualizando la carpeta",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaestreDniel/Workspace-DIW.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaestreDniel/Workspace-DIW/issues"
+  },
+  "homepage": "https://github.com/MaestreDniel/Workspace-DIW#readme"
+}
