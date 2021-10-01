@@ -1,0 +1,14 @@
+body {
+    font-size: xx-large;
+    font-family: sans-serif;
+}
+
+input {
+    font-size: xx-large;
+    width: 5%;
+}
+
+div {
+    font-weight: bolder;
+    display: inline;
+}

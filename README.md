@@ -5,7 +5,8 @@
 ## Contenido actual
 
 1. Plantilla de proyecto (new_project)
-2. Exercici E-0.1
+2. Carpeta de DIW
+3. Carpeta de DWEC
 
 ## Metodologia
 
