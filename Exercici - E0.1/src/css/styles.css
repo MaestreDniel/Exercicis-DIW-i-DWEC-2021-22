@@ -1,0 +1,27 @@
+/*div {
+    /*max-height: 50%;
+    max-width: 75%;
+    
+}*/
+
+body {
+    margin: 0;
+}
+
+div {
+    background-color: #FCE13D;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 5%;
+    width: 75%;
+}
+
+.uno {
+    font-size: 3rem;
+}
+
+.dos {
+    font-size: 1.25rem;
+    font-style: italic;
+    text-decoration: underline;
+}
