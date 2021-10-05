@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Repte 2: Ambit de Variables</title>
+  </head>
+  <body>
+    <main>
+      <h1>Comportament de les variables</h1>
+      <p>var, let.   Hoisting.  </p>
+    </main>
+  </body>
+  <script>
+    y = "Yakaree";
+    var z;
+    var w = "Wanda";
+    let s = "Soon"
+
+    // Això és una funcio arrow, les veurem més endavant!
+    foo = () => {
+      return y;
+    };
+
+    function goo() {
+      let y = "You";
+      return y;
+    }
+
+    function hoo() {
+      return w;
+    }
+
+    function koo() {
+      return z;
+    }
+
+    function loo() {
+      return s;
+    }
+
+    // Endivina quins valors tornaran aquestes variables?
+
+    console.log("y a dins de goo() val: ", goo()); // Saldrá "You"
+    console.log("y a dins de foo() val: ", foo()); // Saldrá "Yakaree"
+    console.log("z a dins de koo() val: ", koo()); // Saldrá undefined
+    console.log("w a dins de hoo() val: ", hoo()); // Saldrá "Wanda"
+
+
+    try {
+        console.log("t val: ", t); // Reference error
+    } catch(e) {
+        console.error("Error variable t");
+    }
+    
+    try {
+        console.log("u val: ", u); // 
+    } catch(e) {
+        console.error("Error variable u");
+    }
+    
+ 
+    console.log("v val: ", v); // Hoisting no tiene efecto, undefined
+    console.log("y val: ", y); // Saldrá "Yakaree"
+    console.log("z val: ", z); // Saldrá undefined
+    console.log("x val: ", x); // Reference error
+
+    u = "Udol";
+    var v = "Valence";
+
+    let t = "Orbit"
+
+  </script>
+</html>

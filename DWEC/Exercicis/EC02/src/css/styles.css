@@ -1,0 +1,37 @@
+body {
+    font-size: large;
+    font-family: sans-serif;
+    background-color: burlywood;
+    margin: 0;
+}
+
+input {
+    font-size: large;
+}
+
+div#resultado {
+    font-weight: bolder;
+    display: inline;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 4px;
+}
+
+div#info {
+    font-size: x-large;
+    font-weight: bolder;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+main {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+header {
+    background-color: darkorange;
+    border: black 3px solid;
+    text-align: center;
+}
+
