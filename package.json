@@ -1,10 +1,14 @@
 {
   "name": "Exercicis-DIW-i-DWEC-2021-22",
   "version": "1.0.0",
-  "description": "- Durante el curso iré actualizando la carpeta",
+  "description": "- Durante el curso iré actualizando la carpeta con los ejercicios realizados.",
   "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "json-server": "^0.17.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "api": "json-server --watch db.json"
   },
   "repository": {
     "type": "git",
