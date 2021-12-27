@@ -1,0 +1,13 @@
+.container {
+  background-color: aqua;
+  .row {
+    background-color: aquamarine;
+    .col-4 {
+      background-color: cadetblue;
+    }
+  }
+}
+
+body {
+  background-color: darkgray;
+}

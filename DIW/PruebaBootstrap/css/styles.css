@@ -1,0 +1,15 @@
+.container {
+  background-color: aqua;
+}
+.container .row {
+  background-color: aquamarine;
+}
+.container .row .col-4 {
+  background-color: cadetblue;
+}
+
+body {
+  background-color: darkgray;
+}
+
+/*# sourceMappingURL=styles.css.map */
