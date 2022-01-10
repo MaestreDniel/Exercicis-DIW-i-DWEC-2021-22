@@ -6,65 +6,193 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
-    <p>Esto es un párrafo</p>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-     <div class="collapse navbar-collapse" id="navbarNav">
-       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+
+    <div class="container-fluid p-5 bg-primary text-white text-center">
+      <h1>My First Bootstrap Page</h1>
+      <p>Resize this responsive page to see the effect!</p>
+    </div>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="javascript:void(0)">Logo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">Link</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="text" placeholder="Search">
+            <button class="btn btn-primary" type="button">Search</button>
+          </form>
+        </div>
       </div>
     </nav>
-    <div class="container">
-      Hola
+
+    <div class="container mt-5">
       <div class="row">
-        <div class="col-4">
-          One of three columns
+        <div class="col-sm-4">
+          <h3>Column 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
         </div>
-        <div class="col-4">
-          One of three columns
+        <div class="col-sm-4">
+          <h3>Column 2</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
         </div>
-        <div class="col-4">
-          One of three columns
+        <div class="col-sm-4">
+          <h3>Column 3</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
         </div>
       </div>
     </div>
 
+    <div class="container p-3">
+      <h1>Responsive Containers</h1>
+      <p>Resize the browser window to see the effect.</p>
+    </div>
+    
+    <div class="personalizo container-sm border">.container-sm</div>
+    <div class="personalizo container-md mt-3 border">.container-md</div>
+    <div class="personalizo container-lg mt-3 border">.container-lg</div>
+    <div class="personalizo container-xl mt-3 border">.container-xl</div>
+    <div class="personalizo container-xxl mt-3 border">.container-xxl</div>
+
+    <div class="container mt-3 border">
+      <h1>Columnas de ancho igual</h1>
+      <p>Se adapta el ancho de las columnas hasta un máximo de 12, puedo añadir los div según me apetezca</p>
+      <div class="row">
+        <div class="col p-3 bg-primary text-white">.col</div>
+        <div class="col p-3 bg-dark text-white">.col</div>
+        <div class="col p-3 bg-primary text-white">.col</div>
+        <div class="col p-3 bg-dark text-white">.col</div>
+        <div class="col p-3 bg-primary text-white">.col</div>
+        <div class="col p-3 bg-dark text-white">.col</div>
+        <div class="col p-3 bg-primary text-white">.col</div>
+        <div class="col p-3 bg-dark text-white">.col</div>
+        <div class="col p-3 bg-primary text-white">.col</div>
+      </div>
+    </div>
+
+    <div class="container-fluid mt-3">
+      <h1>Responsive Columns</h1>
+      <p>Resize the browser window to see the effect.</p>
+      <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+      <div class="row">
+        <div class="col-sm-3 p-3 bg-primary text-white">.col</div>
+        <div class="col-sm-3 p-3 bg-dark text-white">.col</div>
+        <div class="col-sm-3 p-3 bg-primary text-white">.col</div>
+        <div class="col-sm-3 p-3 bg-dark text-white">.col</div>
+      </div>
+    </div>
+    
+    <div class="container-fluid mt-3">
+      <h1>Two Unequal Responsive Columns</h1>
+      <p>Resize the browser window to see the effect.</p>
+      <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+      <div class="row">
+        <div class="col-sm-3 p-3 bg-primary text-white">.col</div>
+        <div class="col-sm-8 p-3 bg-dark text-white">.col</div>
+        <div class="col-sm-1 p-3 bg-primary text-white">.col</div>
+      </div>
+    </div>
+
+    <div class="container mt-3 card bg-light text-dark">
+      <h2 class="card-title">Display Headings</h2>
+      <p>Display headings are used to stand out more than normal headings (larger font-size and lighter font-weight):</p>
+      <h1 class="display-1">Display 1</h1>
+      <h1 class="display-2">Display 2</h1>
+      <h1 class="display-3">Display 3</h1>
+      <h1 class="display-4">Display 4</h1>
+      <h1 class="display-5">Display 5</h1>
+      <h1 class="display-6">Display 6</h1>
+      <p class="h3 p-3 bg-dark text-white">Más info de tipografías</p>
+      <a href="https://www.w3schools.com/bootstrap5/bootstrap_typography.php">W3schools Bootstrap Typography</a>
+    </div>
+
+    <div class="container mt-3 card bg-light text-dark">
+      <h2 class="card-title">Contextual Colors</h2>
+      <p>Use the contextual classes to provide "meaning through colors":</p>
+      <p class="text-muted">This text is muted.</p>
+      <p class="text-primary">This text is important.</p>
+      <p class="text-success">This text indicates success.</p>
+      <p class="text-info">This text represents some information.</p>
+      <p class="text-warning">This text represents a warning.</p>
+      <p class="text-danger">This text represents danger.</p>
+      <p class="text-secondary">Secondary text.</p>
+      <p class="text-dark">This text is dark grey.</p>
+      <p class="text-body">Default body color (often black).</p>
+      <p class="text-light">This text is light grey.</p>
+      <p class="text-white">This text is white.</p>
+    </div>
+
+    <div class="container mt-3 card bg-light text-dark">
+      <h2 class="card-title">Contextual Backgrounds</h2>
+      <p>Use the contextual background classes to provide "meaning through colors".</p>
+      <p>Note that you can also add a .text-* class if you want a different text color:</p>
+      <p class="bg-primary text-white">This text is important.</p>
+      <p class="bg-success text-white">This text indicates success.</p>
+      <p class="bg-info text-white">This text represents some information.</p>
+      <p class="bg-warning text-white">This text represents a warning.</p>
+      <p class="bg-danger text-white">This text represents danger.</p>
+      <p class="bg-secondary text-white">Secondary background color.</p>
+      <p class="bg-dark text-white">Dark grey background color.</p>
+      <p class="bg-light text-dark">Light grey background color.</p>
+    </div>
+
+    <div class="container mt-3">
+      <div class="row">
+
+        <div class="col">
+          <h2>Card Image</h2>
+          <p>Image at the top (card-img-top):</p>
+          <div class="card" style="width:300px">
+            <img class="card-img-top" src="img/Foto_CV.jpg" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Daniel Maestre</h4>
+              <p class="card-text">Soy un desarrollador web front-end</p>
+              <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+          </div>
+          <br>
+        </div>
+        
+        <div class="col">
+          <p>Image at the bottom (card-img-bottom):</p>
+          <div class="card" style="width:300px">
+            <div class="card-body">
+              <h4 class="card-title">Daniel Maestre</h4>
+              <p class="card-text">Soy un desarrollador web front-end</p>
+              <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+            <img class="card-img-bottom" src="img/Foto_CV.jpg" alt="Card image" style="width:100%">
+          </div>
+        </div>
+       
+      </div>
+      <p class="h3 p-3 bg-dark text-white">Más info de las tarjetas</p>
+      <a href="https://www.w3schools.com/bootstrap5/bootstrap_cards.php">W3schools Bootstrap Cards</a>
+    </div>
     <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
-    -->
   </body>
 </html>

@@ -1,13 +1,16 @@
-.container {
-  background-color: aqua;
-  .row {
-    background-color: aquamarine;
-    .col-4 {
-      background-color: cadetblue;
-    }
+.row {
+  .col-sm-4 {
+    background-color: cadetblue;
+    border-radius: 5%;
+    border: 1px solid gray;
+    border-collapse: collapse;
   }
 }
 
-body {
-  background-color: darkgray;
+.personalizo {
+  background-color: darkslategray;
+}
+
+.personalizo2 {
+  background-color: darkgray
 }
