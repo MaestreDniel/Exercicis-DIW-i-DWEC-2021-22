@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XHR-examples</title>
+  </head>
+  <body>
+    <h1>Exemple 5</h1>
+    <p>Manipulació de JSON provinent de una Rest API</p>
+  </body>
+  <script>
+    //url de la API
+    const url = 'http://localhost:3000/comments/2'
+
+    // Crea objecte XHR
+    var xhr = new XMLHttpRequest();
+
+    // Callback en canviar l'estat
+    xhr.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        let JSONdata = this.responseText;
+
+        // Aquesta variable conté dades de tipus string --> és "stringifyed JSON"
+        console.log(typeof JSONdata);
+
+        // Convertir el JSON a Objecte
+        let data = JSON.parse(JSONdata);
+        console.log(typeof data);
+
+        console.info(
+          `Mi id es ${data.id} y el contenido es "${data.body}"`
+        );
+      }
+    };
+    xhr.open("GET", url);
+    xhr.send();
+  </script>
+</html>

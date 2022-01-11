@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body></body>
+  <script>
+    const url = './db.json'
+    // const url2 = './db2.json'
+    // Crea objecte XHR
+    const xhr = new XMLHttpRequest()
+
+    // Callback
+    xhr.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        // Imprimeix el text obtingut
+        
+        let data = JSON.parse(this.responseText)
+        console.log(data.posts)
+        
+      }
+    }
+
+    xhr.open('GET', url, true)
+    // xhr.open('GET', url2, true)
+    xhr.send()
+  </script>
+</html>

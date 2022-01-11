@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XHR-examples</title>
+  </head>
+  <body>
+    <h1>Exemple 1</h1>
+    <p>Els 4 estats pels que passa una petició XHR</p>
+  </body>
+  <script>
+    // Crea objecte XHR
+    var xhr = new XMLHttpRequest()
+    const url = 'http://localhost:3000/comments/1'
+    // Callback en canviar l'estat
+    xhr.onreadystatechange = function () {
+      //Anem a imprimir les propietats de la Response
+      let properties = ''
+
+      for (const property in this) {
+        if ((property != 'onreadystatechange') & ['readyState', 'status', 'responseText'].includes(property))
+          properties += `${property}: ${this[property]}\n`
+        if (property == 'readyState') {
+          console.log(`VALUE = ${this[property]}`)
+          console.log('------------')
+        }
+      }
+
+      console.info(properties)
+    }
+    xhr.open('GET', url, true)
+    xhr.send()
+  </script>
+</html>
