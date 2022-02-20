@@ -16,22 +16,22 @@
       "id": 3
     }
   ],
-  "comments": [
+  "conciertos": [
     {
-      "id": 1,
-      "body": "some comment"
+      "titulo": "Atlanta",
+      "grupo": "Metallica",
+      "fecha": "2022-02-21",
+      "lugar": "Palma",
+      "descripcion": "asdasdsad",
+      "id": 1
     },
     {
-      "id": 2,
-      "body": "Hola, soy Dani Maestre y este comentario funciona y ha sido modificado con PATCH"
-    },
-    {
-      "body": "Primer comentario de 2022",
-      "id": 3
-    },
-    {
-      "body": "Segundo comentario de 2022",
-      "id": 4
+      "titulo": "Festival British Steel",
+      "grupo": "Judas Priest",
+      "fecha": "2022-02-10",
+      "lugar": "Palma",
+      "descripcion": "Judas Priest vuelve a dar caña con su característico sonido de la NWOBHM",
+      "id": 2
     }
   ],
   "profile": {

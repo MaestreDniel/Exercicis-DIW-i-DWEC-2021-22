@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    body {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+  </style>
+  <div id="fetchresult"></div>
+  <div id="fetcherror"></div>
+
+  <ol id="conciertos">
+  
+  </ol>
+
+  <form id="concierform" action="">
+    <h1>Creador de conciertos</h1>
+    <label>Título: <input type="text" name="titulo" id="titulo"></label><br><br>
+    <label>Artista: <input type="text" name="grupo" id="grupo"></label><br><br>
+    <label>Fecha: <input type="date" name="fecha" id="fecha"></label><br><br>
+    <label>Lugar: <input type="text" name="lugar" id="lugar"></label><br><br>
+    <label>Descripción: <textarea name="descripcion" id="descripcion"></textarea></label><br><br>
+    <button type="button" id="add" onclick="añadirConcierto()">Añadir</button><br><br>
+  </form>
+
+  <form id="editConcierto" action="" style="display:none">
+    <h1>Editor de conciertos</h1>
+    <label>Título: <input type="text" name="tituloo" id="tituloo"></label><br><br>
+    <label>Artista: <input type="text" name="grupoo" id="grupoo"></label><br><br>
+    <label>Fecha: <input type="date" name="fechaa" id="fechaa"></label><br><br>
+    <label>Lugar: <input type="text" name="lugarr" id="lugarr"></label><br><br>
+    <label>Descripción: <textarea name="descripcionn" id="descripcionn"></textarea></label><br><br>
+    <button type="button" id="edit">Editar</button><br><br>
+  </form>
+
+  <script src="minicrud.js"></script>
+</body>
+</html>
