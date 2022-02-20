@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "- Durante el curso iré actualizando la carpeta con los ejercicios realizados.",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  },
   "devDependencies": {
     "json-server": "^0.17.0"
   },

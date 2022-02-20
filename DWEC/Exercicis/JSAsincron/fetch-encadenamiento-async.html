@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Prueba de fetch encadenados con async/await</title>
+  </head>
+  <body>
+    <h1>Fetch encadenado async/await</h1>
+    <div id="personaje"></div>
+  </body>
+  <script>
+    async function getPersonaje(url) {
+      const response1 = await fetch(url);
+      const info = await response1.json();
+
+      let txt = "";
+      for (let i in info) {
+        txt += `<h2>${info[i].name}</h2>`;
+        txt += `<h3>${info[i].motto}</h3><br>`;
+        txt += `<img class="myImage" src=""/>`;
+      }
+      document.getElementById("personaje").innerHTML += txt;
+    }
+    
+    async function getImage(url) {
+      // Fetch 1
+      const response1 = await fetch(url);
+      const info = await response1.json();
+
+      for (let i in info) {
+        // Fetch 2 encadenado
+        const response2 = await fetch(info[i].img);
+        const imatge = await response2.blob();
+        var objectURL = URL.createObjectURL(imatge);
+        document.getElementsByClassName("myImage")[i].src = objectURL;
+      }
+    }
+
+    const myurl =
+      "https://my-json-server.typicode.com/classicoman2/fakeRESTserver/characters";
+
+    getPersonaje(myurl).catch((error) =>
+      console.log("Error en codi asíncron", error)
+    );
+    getImage(myurl).catch((error) =>
+      console.log("Error en codi asíncron", error)
+    );
+
+  </script>
+</html>
